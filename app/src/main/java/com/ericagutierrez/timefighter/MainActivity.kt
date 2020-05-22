@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         incrementScore()
 
     }
+
+        gameScoreTextView.text = getString(R.string.yourScore, score)
     }
 
     private fun incrementScore() {
