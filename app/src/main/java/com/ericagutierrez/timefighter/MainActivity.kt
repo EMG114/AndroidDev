@@ -123,6 +123,9 @@ countDownTimer.start()
         score += 1
         var newScore = getString(R.string.yourScore, score)
         gameScoreTextView.text = newScore
+
+        val blinkAnimation = AnimationUtils.loadAnimation(this, R.anim.blink)
+        gameScoreTextView.startAnimation(blinkAnimation)
     }
 
     private fun startGame() {
